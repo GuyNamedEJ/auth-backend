@@ -7,7 +7,7 @@ require('dotenv').config()
 async function dbConnect(){
     // use mongoose to connect this app to our database on mongoDB using the DB_URL (connection string)
     mongoose
-    .connect(process.env.MONGO_URI)
+    .connect(process.env.MONGODB_URI)
         .then(() => {
             console.log("Database connection successful")
         })
